@@ -6,6 +6,46 @@
 body {
     font-family: 'Montserrat';
 }
+        font-family: Roboto;
+        }
+    
+        h1,
+        h2,
+        h3,
+        h4,
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        ul {
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-left: 0;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        .list {
+            list-style: none;
+            padding: 0;
+        }
+        .link {
+            text-decoration: none;
+        }
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            border: 0;
+            padding: 0;
+            white-space: nowrap;
+            clip-path: inset(100%);
+            clip: rect(0 0 0 0);
+            overflow: hidden;
+        }
 ul {
     list-style: none;
 }
@@ -62,6 +102,7 @@ header .container {
         font-family: RobotoSlab;
         font-size: 14px;
         letter-spacing: -0.35px;
+        margin-bottom: 120px ;
 }
 .services-title {
     color: var(--main-color);
@@ -141,4 +182,9 @@ header .container {
     text-transform: uppercase;
     border: none;
     border-radius: 3px;
+    transition: opacity 0.3s ease;
+}
+.contact-us-btn:hover,
+.contact-us-btn:focus {
+    opacity: 0.8;
 }
