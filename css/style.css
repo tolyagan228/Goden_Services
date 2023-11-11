@@ -99,7 +99,7 @@ header .container {
         font-family: RobotoSlab;
         font-size: 14px;
         letter-spacing: -0.35px;
-        margin-bottom: 120px ;
+        padding-bottom: 119px;
 }
 .services-title {
     color: var(--main-color);
@@ -108,6 +108,8 @@ header .container {
         line-height: 75px;
         letter-spacing: -1px;
         text-transform: uppercase;
+        padding-top: 92px;
+        padding-bottom: 119px;
 }
 .services-list {
     display: flex;
@@ -211,6 +213,7 @@ header .container {
     border-radius: 3px;
     transition: opacity 0.3s ease;
 }
-.contact-us-btn:hover{
+.contact-us-btn:hover,
+.contact-us-btn:focus {
     opacity: 0.8;
 }
