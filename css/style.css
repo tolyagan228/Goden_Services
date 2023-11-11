@@ -6,9 +6,6 @@
 body {
     font-family: 'Montserrat';
 }
-        font-family: Roboto;
-        }
-    
         h1,
         h2,
         h3,
@@ -116,6 +113,25 @@ header .container {
     display: flex;
     gap: 50px;
 }
+.services-item::before {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 69px;
+    border: 3px solid var(--accent-color);
+    border-radius: 50%;
+    margin: 0 auto;
+    background-image: url('../images/services_svg1_svg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 38px 38px;
+}
+.services-item:nth-child(2)::before{
+    background-image: url('../images/services_svg2_svg.svg');
+}
+.services-item:nth-child(3)::before{
+    background-image: url('../images/services_svg3_svg.svg');
+}
 .contact-us-title {
     color: white;
     text-align: center;
@@ -172,6 +188,17 @@ header .container {
     width: 458px;
     height: 212px;
 }
+.contact-us-input,
+.contact-us-textarea {
+    /* задати початкові дані для рамки та зробити її прозорою, щоб при ефекті не стрибало */
+    border: 2px solid transparent;
+}
+.contact-us-input:hover,
+.contact-us-input:focus .contact-us-textarea:hover,
+.contact-us-textarea:focus {
+    border-color: var(--accent-color);
+    cursor: pointer;
+}
 .contact-us-btn {
     background-color: var(--accent-color);
     padding: 23px 33px;
@@ -184,7 +211,6 @@ header .container {
     border-radius: 3px;
     transition: opacity 0.3s ease;
 }
-.contact-us-btn:hover,
-.contact-us-btn:focus {
+.contact-us-btn:hover{
     opacity: 0.8;
 }
