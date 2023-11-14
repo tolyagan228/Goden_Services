@@ -85,6 +85,10 @@ header .container {
 .nav-link:hover, .nav-link:focus {
     font-weight: 700;
 }
+.services {
+padding-top: 92px;
+    padding-bottom: 119px;
+}
 .services 
 .services-item-title {
     color: var(--main-color);
@@ -99,7 +103,6 @@ header .container {
         font-family: RobotoSlab;
         font-size: 14px;
         letter-spacing: -0.35px;
-        padding-bottom: 119px;
 }
 .services-title {
     color: var(--main-color);
@@ -108,8 +111,7 @@ header .container {
         line-height: 75px;
         letter-spacing: -1px;
         text-transform: uppercase;
-        padding-top: 92px;
-        padding-bottom: 119px;
+        margin-bottom: 93px;
 }
 .services-list {
     display: flex;
@@ -212,6 +214,7 @@ header .container {
     border: none;
     border-radius: 3px;
     transition: opacity 0.3s ease;
+    cursor: pointer;
 }
 .contact-us-btn:hover,
 .contact-us-btn:focus {
